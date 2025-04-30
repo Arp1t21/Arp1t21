@@ -1,0 +1,128 @@
+.color-combination {
+    text-align: center;
+    padding: 180px 120px;
+}
+
+.color-div-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.color-div-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 100px;
+    padding: 0px 100px;
+}
+
+.color-blocks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 550px;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.color-card {
+    width: 110px;
+    height: 400px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    background-color: #fffcf9;
+    text-align: center;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: width 0.4s ease, padding 0.4s ease, height 0.4s ease, transform 0.4s ease;
+    overflow: hidden;
+    border: 1px solid black;
+    flex-shrink: 0;
+}
+
+.color-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-card h3 {
+    font-size: 20px;
+}
+
+.color-card.expanded {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.color-card img {
+    border-radius: 5px;
+}
+
+
+.color-img {
+    max-width: 100px;
+    transition: max-width 0.4s ease;
+}
+
+.color-card.expanded .color-img {
+    max-width: 270px;
+    height: 70%;
+}
+
+
+
+.left-img, .right-img {
+    flex-shrink: 0;
+}
+
+
+.left-img {
+    order: 1;
+}
+
+.right-img {
+    order: 3;
+}
+
+.color-content {
+    order: 2;
+}
+
+
+.color-content {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.color-card p {
+    font-size: 16px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.color-card.expanded {
+    width: 800px;
+    height: 550px;
+    padding: 20px 40px;
+}
+
+.color-card.expanded p {
+    opacity: 1;
+}
+
+.color-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15); 
+}
+
+
+

@@ -1,0 +1,198 @@
+.styles-section {
+    padding: 180px 120px;
+    text-align: center;
+}
+
+.styles-section h2 {
+    font-size: 32px;
+    margin-bottom: 100px;
+}
+
+.styles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+}
+
+.style-wrapper {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.style-wrapper:hover {
+    transform: scale(1.03);
+}
+
+.style-card {
+    width: 320px;
+    height: 270px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 12px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.30);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgb(69, 69, 69);
+}
+
+
+.style-info {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-info h3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.style-info p {
+    font-size: 15px;
+    color: #000000;
+}
+
+.style-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.40);
+}
+
+.style-card .overlay {
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.style-card h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.style-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.style-card button {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.style-card button:hover {
+    background: #ddd;
+}
+
+.modal-cloth {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.modal-cloth.show {
+    opacity: 1;
+}
+
+.modal-content {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    max-width: 900px;
+    height: 500px;
+    padding: 30px;
+    text-align: left;
+    animation: fadeInContent 0.6s ease;
+}
+
+
+.modal-content.fade-out {
+    animation: fadeOutContent 0.4s ease forwards;
+}
+
+
+.left-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.right-modal {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+}
+
+.right-modal img {
+    height: 100%;
+    max-width: auto;
+    border-radius: 8px;
+    border: 1px solid rgb(126, 126, 126);
+}
+
+.modal-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.modal-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    background: #000;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+}
+
+
+.modal.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+
+@keyframes fadeInContent {
+    from { opacity: 0; transform: scale(0.9); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeOutContent {
+    from { opacity: 1; transform: scale(1); }
+    to   { opacity: 0; transform: scale(0.9); }
+}

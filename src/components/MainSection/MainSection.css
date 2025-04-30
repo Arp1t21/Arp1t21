@@ -1,0 +1,24 @@
+.mini-intro {
+    padding: 180px 120px;
+}
+
+.div-h2-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-h2 {
+    font-size: 30px;
+}
+
+.div-p-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.mini-p {
+    font-size: 20px;
+}

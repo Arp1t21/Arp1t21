@@ -1,0 +1,54 @@
+.comments-page {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .comments-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .comments-page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .back-to-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .back-to-home:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comments-page-content {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  /* Для мобильных устройств */
+  @media (max-width: 768px) {
+    .comments-page-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    
+    .comments-page-header h1 {
+      font-size: 2rem;
+    }
+  }
