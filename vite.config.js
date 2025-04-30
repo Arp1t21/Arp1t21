@@ -1,7 +1,8 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/Arp1t21/',
-  plugins: [react()],
+  base: '/Arp1t21/', // <-- ВАЖНО! Имя твоего репозитория
+  plugins: [react()]
 })
